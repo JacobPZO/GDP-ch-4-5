@@ -8,6 +8,7 @@
             "name": "AudioBehaviour",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -25,6 +26,7 @@
             "name": "AudioListener",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -65,6 +67,7 @@
             "name": "Camera",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -88,6 +91,7 @@
             "name": "Cubemap",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -111,6 +115,7 @@
             "name": "EditorExtension",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -128,6 +133,7 @@
             "name": "GameObject",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -157,6 +163,7 @@
             "name": "LevelGameManager",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -168,6 +175,7 @@
             "name": "Light",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -191,6 +199,7 @@
             "name": "LightmapSettings",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -208,6 +217,7 @@
             "name": "Material",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -217,26 +227,33 @@
           },
           {
             "name": "Mesh",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/State.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "MeshFilter",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/State.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "MeshRenderer",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/State.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/Init.unity"
+              "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -250,7 +267,8 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/Init.unity"
+              "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -259,6 +277,7 @@
             "name": "NamedObject",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -306,6 +325,7 @@
             "name": "RenderSettings",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -341,6 +361,7 @@
             "name": "Shader",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -412,6 +433,7 @@
             "name": "Transform",
             "scenes": [
               "Assets/Scenes/Init.unity",
+              "Assets/Scenes/State.unity",
               "Assets/Scenes/test1.unity",
               "Assets/Scenes/test2.unity",
               "Assets/Scenes/test3.unity"
@@ -442,6 +464,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.jsonserialize"
+          },
+          {
+            "name": "Required by Physics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.physics"
           },
           {
             "name": "Required by RuntimeInitializeOnLoadManagerInitializer Module",
@@ -502,6 +530,31 @@
         ]
       },
       {
+        "name": "Physics",
+        "dependencies": [
+          {
+            "name": "BoxCollider",
+            "scenes": [
+              "Assets/Scenes/State.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Collider",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "PhysicsManager",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          }
+        ]
+      },
+      {
         "name": "RuntimeInitializeOnLoadManagerInitializer",
         "dependencies": [
           {
@@ -544,6 +597,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.jsonserialize"
+          },
+          {
+            "name": "Required by Physics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.physics"
           },
           {
             "name": "Required by RuntimeInitializeOnLoadManagerInitializer Module",

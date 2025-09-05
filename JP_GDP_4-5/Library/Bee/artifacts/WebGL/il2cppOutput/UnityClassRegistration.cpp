@@ -18,6 +18,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_JSONSerialize();
 	RegisterModule_JSONSerialize();
 
+	void RegisterModule_Physics();
+	RegisterModule_Physics();
+
 	void RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
 	RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
 
@@ -99,13 +102,16 @@ class Texture2DArray; template <> void RegisterUnityClass<Texture2DArray>(const 
 class Texture3D; template <> void RegisterUnityClass<Texture3D>(const char*);
 class TimeManager; template <> void RegisterUnityClass<TimeManager>(const char*);
 class Transform; template <> void RegisterUnityClass<Transform>(const char*);
+class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
+class Collider; template <> void RegisterUnityClass<Collider>(const char*);
+class PhysicsManager; template <> void RegisterUnityClass<PhysicsManager>(const char*);
 namespace TextRendering { class Font; } template <> void RegisterUnityClass<TextRendering::Font>(const char*);
 
 void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 57 non stripped classes
+	//Total: 60 non stripped classes
 	//0. AudioBehaviour
 	RegisterUnityClass<AudioBehaviour>("Audio");
 	//1. AudioClip
@@ -218,7 +224,13 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<TimeManager>("Core");
 	//55. Transform
 	RegisterUnityClass<Transform>("Core");
-	//56. Font
+	//56. BoxCollider
+	RegisterUnityClass<BoxCollider>("Physics");
+	//57. Collider
+	RegisterUnityClass<Collider>("Physics");
+	//58. PhysicsManager
+	RegisterUnityClass<PhysicsManager>("Physics");
+	//59. Font
 	RegisterUnityClass<TextRendering::Font>("TextRendering");
 
 }

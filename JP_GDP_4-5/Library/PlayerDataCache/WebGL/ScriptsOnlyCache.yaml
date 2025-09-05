@@ -2,6 +2,8 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Chapter.Singleton.GameManager
+    - Chapter.State.BikeController
+    - Chapter.State.ClientState
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -39,7 +41,46 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 3638}
+      Script: {instanceID: 3762}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    Assets/Scenes/State.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 3190}
+    - Class: 114
+      Script: {instanceID: 6720}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -986,4 +1027,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/test1.unity
   - Assets/Scenes/test2.unity
   - Assets/Scenes/test3.unity
-  playerPath: C:/Users/Ninja/My project/the_build
+  - Assets/Scenes/State.unity
+  playerPath: C:/Users/Ninja/Documents/GitHub/GDP-ch-4-5/JP_GDP_4-5/Temp

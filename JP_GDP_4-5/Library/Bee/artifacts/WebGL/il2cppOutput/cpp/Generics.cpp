@@ -846,6 +846,7 @@ struct Action_2_t43544BAAB4CC69E54228A3389CC3D57A805208A2;
 struct Action_2_t5BCD350E28ADACED656596CC308132ED74DA0915;
 struct Action_2_t9C4E97D0565650F0AEF7C72077EB8A0F9326E40B;
 struct Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C;
+struct Action_2_t70E17A6F8F03189031C560482454FE2D87F496F2;
 struct Action_2_t1D42C7D8DCD2DEB7C556FB3783F0EDAFF694E5E8;
 struct Action_3_t477276C2D01726A5BA92C3B882C9BEB268903DD9;
 struct Action_3_t838D6B6BB4BFFC6E8430C389747DB008A0B26146;
@@ -1999,6 +2000,10 @@ struct IntPtr_t
 struct MethodBase_t  : public MemberInfo_t
 {
 };
+struct PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE 
+{
+	int32_t ___m_Handle;
+};
 struct Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D 
 {
 	float ___m_XMin;
@@ -2424,6 +2429,12 @@ struct NativeArray_1_t6D4C2D5161FC101BAF06059CD9414A2153CCC2A0
 	int32_t ___m_Length;
 	int32_t ___m_AllocatorLabel;
 };
+struct NativeArray_1_tA04FF6E7BE3D24B3E6351C63BF7229421DFE1259 
+{
+	void* ___m_Buffer;
+	int32_t ___m_Length;
+	int32_t ___m_AllocatorLabel;
+};
 struct NativeArray_1_t033CD013BF2CA1D8A5909650F2E75960C527E638 
 {
 	void* ___m_Buffer;
@@ -2532,6 +2543,9 @@ struct Action_2_t9C4E97D0565650F0AEF7C72077EB8A0F9326E40B  : public MulticastDel
 {
 };
 struct Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C  : public MulticastDelegate_t
+{
+};
+struct Action_2_t70E17A6F8F03189031C560482454FE2D87F496F2  : public MulticastDelegate_t
 {
 };
 struct Action_2_t1D42C7D8DCD2DEB7C556FB3783F0EDAFF694E5E8  : public MulticastDelegate_t
@@ -6494,6 +6508,68 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_2__ctor_m6A0E7FE9DF9AE6C4BEE58611
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_gshared (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* __this, RuntimeObject* ___0_arg1, RuntimeObject* ___1_arg2, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_arg1, ___1_arg2, reinterpret_cast<RuntimeMethod*>(__this->___method));
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void Action_2_Invoke_m7EA811A13BB45D59926C636C90CFD2FCE6D89B3B_Multicast(Action_2_t70E17A6F8F03189031C560482454FE2D87F496F2* __this, PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE ___0_arg1, NativeArray_1_tA04FF6E7BE3D24B3E6351C63BF7229421DFE1259 ___1_arg2, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Action_2_t70E17A6F8F03189031C560482454FE2D87F496F2* currentDelegate = reinterpret_cast<Action_2_t70E17A6F8F03189031C560482454FE2D87F496F2*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE, NativeArray_1_tA04FF6E7BE3D24B3E6351C63BF7229421DFE1259, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl)((Il2CppObject*)currentDelegate->___method_code, ___0_arg1, ___1_arg2, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method));
+	}
+}
+void Action_2_Invoke_m7EA811A13BB45D59926C636C90CFD2FCE6D89B3B_OpenInst(Action_2_t70E17A6F8F03189031C560482454FE2D87F496F2* __this, PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE ___0_arg1, NativeArray_1_tA04FF6E7BE3D24B3E6351C63BF7229421DFE1259 ___1_arg2, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE, NativeArray_1_tA04FF6E7BE3D24B3E6351C63BF7229421DFE1259, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr)(___0_arg1, ___1_arg2, method);
+}
+void Action_2_Invoke_m7EA811A13BB45D59926C636C90CFD2FCE6D89B3B_OpenStatic(Action_2_t70E17A6F8F03189031C560482454FE2D87F496F2* __this, PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE ___0_arg1, NativeArray_1_tA04FF6E7BE3D24B3E6351C63BF7229421DFE1259 ___1_arg2, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE, NativeArray_1_tA04FF6E7BE3D24B3E6351C63BF7229421DFE1259, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr)(___0_arg1, ___1_arg2, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_2__ctor_mBD0F919ECE3004F6860F5575440572621853016E_gshared (Action_2_t70E17A6F8F03189031C560482454FE2D87F496F2* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
+{
+	__this->___method_ptr = (intptr_t)il2cpp_codegen_get_method_pointer((RuntimeMethod*)___1_method);
+	__this->___method = ___1_method;
+	__this->___m_target = ___0_object;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target), (void*)___0_object);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___1_method);
+	__this->___method_code = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___1_method))
+	{
+		bool isOpen = parameterCount == 2;
+		if (isOpen)
+			__this->___invoke_impl = (intptr_t)&Action_2_Invoke_m7EA811A13BB45D59926C636C90CFD2FCE6D89B3B_OpenStatic;
+		else
+			{
+				__this->___invoke_impl = __this->___method_ptr;
+				__this->___method_code = (intptr_t)__this->___m_target;
+			}
+	}
+	else
+	{
+		if (___0_object == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+		__this->___invoke_impl = __this->___method_ptr;
+		__this->___method_code = (intptr_t)__this->___m_target;
+	}
+	__this->___extra_arg = (intptr_t)&Action_2_Invoke_m7EA811A13BB45D59926C636C90CFD2FCE6D89B3B_Multicast;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_2_Invoke_m7EA811A13BB45D59926C636C90CFD2FCE6D89B3B_gshared (Action_2_t70E17A6F8F03189031C560482454FE2D87F496F2* __this, PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE ___0_arg1, NativeArray_1_tA04FF6E7BE3D24B3E6351C63BF7229421DFE1259 ___1_arg2, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9D9DE, NativeArray_1_tA04FF6E7BE3D24B3E6351C63BF7229421DFE1259, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_arg1, ___1_arg2, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
 #ifdef __clang__
